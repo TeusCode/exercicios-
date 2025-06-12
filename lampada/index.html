@@ -11,12 +11,12 @@
 <body>
     <h1>Exercício Lâmpada</h1>
     <main id="conteúdo">
-        <div><img id="imagem" onmouseenter="entrou()" onmouseleave="saiu()" ondblclick="quebrada()"
-                src="imagens/desligada.jpg" alt="Imagem de uma lâmpada desligada">
+        <div><img id="imagem" onmouseenter="ligar()" onmouseleave="desligar()" ondblclick="quebrar()"
+                src=" imagens/desligada.jpg" alt="Imagem de uma lâmpada desligada">
         </div>
 
         <input type="button" onclick="ligar()" value="Ligar">
-        <input type="button" value="Desligar" onclick="desligada()">
+        <input type="button" value="Desligar" onclick="desligar()">
     </main>
     <script src="script.js"></script>
 </body>

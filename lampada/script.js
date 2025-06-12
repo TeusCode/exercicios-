@@ -1,18 +1,23 @@
 //Seleciona elementos:
-let img = document.getElementById('imagem')
+const img = document.getElementById('imagem')
 
-function entrou() {
-    img.src = "imagens/ligada.jpg"
-}
+let estado = 'desligado'
+
+
 function ligar() {
-    img.src = "imagens/ligada.jpg"
+    if (estado == 'desligado') {
+        img.src = "imagens/ligada.jpg"
+        estado = 'ligado'
+    }
 }
-function desligada() {
-    img.src = "imagens/desligada.jpg"
+
+function desligar() {
+    if (estado == 'ligado') {
+        img.src = "imagens/desligada.jpg"
+        estado = 'desligado'
+    }
 }
-function quebrada() {
+function quebrar() {
     img.src = "imagens/quebrada.jpg"
-}
-function saiu() {
-    img.src = "imagens/desligada.jpg"
+    estado = 'quebrado'
 }
