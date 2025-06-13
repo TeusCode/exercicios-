@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+main {
+    text-align: center;
+}
+
+main>button {
+    width: 80px;
+}

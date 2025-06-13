@@ -19,3 +19,7 @@ main {
     height: 100vh;
     text-align: center;
 }
+
+#onOff {
+    width: 80px;
+}
