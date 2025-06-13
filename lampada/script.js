@@ -1,12 +1,36 @@
 //Seleciona elementos:
 const img = document.getElementById('imagem')
-const onOff = document.getElementById('onOff')
+const btOnOff = document.getElementById('onOff')
 
+let lampBreak = false
 
+//liga/Desliga
 function onOff() {
-    if (onOff.textContent == 'Ligar') {
-        img.src = 'imagens/ligada.jpg'
+    if (lampBreak) return;
+
+    if (btOnOff.textContent == 'Ligar') {
+        ligar()
     } else {
-        img.src = 'imagens/desligada.jpg'
+        desligar()
     }
+}
+
+function ligar() {
+    if (!lampBreak) {
+        img.src = 'imagens/ligada.jpg'
+        btOnOff.textContent = 'Desligar'
+    }
+}
+
+function desligar() {
+    if (!lampBreak) {
+        img.src = 'imagens/desligada.jpg'
+        btOnOff.textContent = 'Ligar'
+    }
+}
+
+function quebrar() {
+    img.src = 'imagens/quebrada.jpg'
+    btOnOff.textContent = 'Quebrada!'
+    lampBreak = true
 }
